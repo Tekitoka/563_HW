@@ -5,7 +5,9 @@ import static org.junit.jupiter.api.Assertions.*;
 import main.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
+@ExtendWith(TestResultLogger.class)
 class UserAuthorizationTests {
     private User user1;
     private User user2;
